@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <!-- 这里为了统一设置activity背景颜色，又为了兼顾到状态栏的背景颜色，所以使用了两个FrameLayout -->
+
+
+    <!-- 将要放置fragment的布局 -->
+
+    <FrameLayout
+        android:id="@+id/fragment_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/def_activity_bk"
+        >
+    </FrameLayout>
+
+</RelativeLayout>

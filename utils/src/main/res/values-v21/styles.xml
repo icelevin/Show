@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar" >false</item>
+        <item name="windowNoTitle">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+
+
+
+        <!--状态栏颜色-->
+        <item name="android:colorPrimaryDark">@color/bk_title_red</item>
+        <!--Appbar背景色-->
+        <item name="android:colorPrimary">@color/def_colorPrimary</item>
+        <!--控制各个控件被选中时的颜色-->
+        <item name="colorAccent">@color/def_colorAccent</item>
+        <item name="android:textColor">@color/def_text_color</item>
+        <item name="android:windowBackground">@color/def_activity_bk</item>
+        <!--各个控制控件的默认颜色-->
+        <item name="android:colorControlNormal">@color/def_colorAccent</item>
+    </style>
+
+</resources>

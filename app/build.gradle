@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.icelevin.www.show"
+        minSdkVersion 18
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+
+        release {
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            multiDexEnabled true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    greendao {
+        schemaVersion 1
+        targetGenDir 'src/main/java'
+        daoPackage 'com.icelevin.www.show.dao'
+    }
+
+    productFlavors {
+    }
+}
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        //aop 需要在代码编译的时候引入的插件
+        classpath 'org.aspectj:aspectjtools:1.8.1'
+        //orm 需要在代码编译的时候引入的插件
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+    }
+
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    //3.5.5：请务必查看下面注释[1]
+    //如果你想应用能够兼容Android6.0，请添加此依赖(org.apache.http.legacy.jar)
+    //    api 'cn.bmob.android:http-legacy:1.0'
+    implementation project(':x5web')
+    implementation 'net.zetetic:android-database-sqlcipher:3.5.6'
+    implementation project(':utils')
+    implementation project(':lazyviewpager')
+    implementation project(':vitamio')
+}
+

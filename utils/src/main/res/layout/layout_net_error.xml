@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/tv_net_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="没有网络连接，请检查网络后重试"
+        android:textColor="@color/common_gray_darker"
+        android:textSize="@dimen/common_large" />
+
+    <Button
+        android:id="@+id/net_btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minHeight="40dp"
+        android:minWidth="120dp"
+        android:text="点击刷新"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_large"
+        android:gravity="center"
+        android:padding="10dip"
+        android:background="@drawable/select_login_cancel"
+         />
+
+</LinearLayout>

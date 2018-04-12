@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/ll_bottom"
+        android:background="@color/line" />
+
+    <RadioGroup
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/select_more_item_bk"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:padding="@dimen/layout_margin_2dp"
+            android:drawablePadding="@dimen/layout_margin_2dp"
+            android:drawableTop="@drawable/bottom_home_selector"
+            android:gravity="center"
+            android:text="首  页"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="10sp">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_film"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:padding="@dimen/layout_margin_2dp"
+            android:drawablePadding="@dimen/layout_margin_2dp"
+            android:drawableTop="@drawable/buttom_film_selector"
+            android:gravity="center"
+            android:text="视  频"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="10sp">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_discover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:padding="@dimen/layout_margin_2dp"
+            android:drawablePadding="@dimen/layout_margin_2dp"
+            android:drawableTop="@drawable/buttom_dicover_selector"
+            android:gravity="center"
+            android:text="探  索"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="10sp">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:padding="@dimen/layout_margin_2dp"
+            android:drawablePadding="@dimen/layout_margin_2dp"
+            android:drawableTop="@drawable/buttom_people_selector"
+            android:gravity="center"
+            android:text="用  户"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="10sp">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fragment_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom">
+
+        <fragment
+            android:id="@+id/fragment_home"
+            class="com.icelevin.www.show.ui.HomeFragment2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment
+            android:id="@+id/fragment_film"
+            class="com.icelevin.www.show.ui.VideoFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment
+            android:id="@+id/fragment_discovery"
+            class="com.icelevin.www.show.ui.DiscoveryFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment
+            android:id="@+id/fragment_my"
+            class="com.icelevin.www.show.ui.UserFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hb.utils">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <application
+
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <!--隐藏软键盘需要设置stateAlwaysHidden 就能保证能成功隐藏-->
+        <activity
+            android:name=".view.activity.FragmentContainerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/Theme.PageIndicatorDefaults">
+
+        </activity>
+
+        <activity
+            android:name=".view.activity.dialog.DialogActivity"
+            android:theme="@style/DialogTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+
+    <declare-styleable name="buttom_button">
+        <attr name="image" format="reference|color" />
+        <attr name="check_image" format="reference|color" />
+        <attr name="text" format="reference"
+            />
+    </declare-styleable>
+
+    <declare-styleable name="layout_max_height">
+        <attr name="layout_max_height" format="dimension" />
+        <attr name="layout_max_width" format="dimension" />
+        />
+    </declare-styleable>
+</resources>

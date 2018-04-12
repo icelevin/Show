@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_load_faile"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/def_activity_bk"
+     >
+
+    <TextView
+        android:id="@+id/load_faile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="加载失败,请检查网络后点击刷新按钮重试"
+        android:textColor="@color/common_gray_darker"
+        android:textSize="@dimen/common_large" 
+        android:gravity="center"
+        />
+
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minHeight="40dp"
+        android:minWidth="120dp"
+        android:text="点击刷新"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_large" 
+        android:gravity="center"
+        android:padding="10dip"
+        android:background="@drawable/select_login_cancel"
+        />
+
+</LinearLayout>

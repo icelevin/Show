@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../HJK.iml" filepath="$PROJECT_DIR$/../HJK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Show.iml" filepath="$PROJECT_DIR$/../Show.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sharelib/sharelib.iml" filepath="$PROJECT_DIR$/../sharelib/sharelib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shortcutBadger/shortcutBadger.iml" filepath="$PROJECT_DIR$/../shortcutBadger/shortcutBadger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../swiperecyclerview/swiperecyclerview.iml" filepath="$PROJECT_DIR$/../swiperecyclerview/swiperecyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../umenganalytics/umenganalytics.iml" filepath="$PROJECT_DIR$/../umenganalytics/umenganalytics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../unionpay/unionpay.iml" filepath="$PROJECT_DIR$/../unionpay/unionpay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utils.iml" filepath="$PROJECT_DIR$/utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../x5web/x5web.iml" filepath="$PROJECT_DIR$/../x5web/x5web.iml" />
+    </modules>
+  </component>
+</project>

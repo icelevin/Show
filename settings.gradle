@@ -1,0 +1,1 @@
+include ':app', ':swiperecyclerview', ':umenganalytics', ':utils', ':sharelib', ':x5web', ':libzxing-master', ':lazyviewpager', ':vitamio'
