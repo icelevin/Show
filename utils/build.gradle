@@ -100,6 +100,7 @@ dependencies {
     api 'cn.bmob.android:bmob-sdk:3.5.7'
     api 'com.android.support:multidex:1.0.3'
     api 'cn.jzvd:jiaozivideoplayer:6.2.9'
+    api 'com.jaeger.statusbarutil:library:1.5.0'
 }
 
 
